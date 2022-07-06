@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300&family=Grape+Nuts&family=Roboto:wght@400;700&display=swap");
+
+
+.bigContainer {
+  scroll-behavior: smooth;
+}
+
+.bigContainer::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+.bigContainer::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 10px;
+}
+.alert {
+  margin: 30px 100px 0 100px;
+  text-align: center;
+  font-size: 20px;
+  transition: 1s ease-in-out;
+}
+.flex {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.title {
+  margin-top: 100px;
+  font-size: 50px;
+}
+
+.img--1 {
+  width: 80px;
+  position: relative;
+  margin-left: 40px;
+  margin-top: 70px;
+}
+
+.todoText {
+  outline: none;
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  font-size: 25px;
+  padding: 4px 10px;
+  width: 460px;
+  height: 66px;
+  font-weight: 200;
+}
+
+.btn--1 {
+  position: absolute;
+  border: none;
+  background-color: white;
+  left: 72%;
+  top: 49.5%;
+  width: 75px;
+  height: 75px;
+}
+
+.btn--2 {
+  width: 75px;
+  height: 75px;
+}
+
+.bigContainer {
+  position: absolute;
+  width: 460px;
+  height: 300px;
+  top: 60%;
+  left: 35%;
+  overflow-y: scroll;
+  transition: 1s ease-in-out;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10px;
+  background-color: rgb(214, 222, 224);
+  margin: 5px;
+  border-radius: 10px;
+  font-family: "Cairo", sans-serif;
+  font-weight: 900;
+  transition: 1s ease-in-out;
+}
+
+.delete--1 {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.text {
+  width: 30%;
+}
+.date {
+  width: 30%;
+}
+
+.delete--1:hover {
+  color: rgb(255, 49, 49);
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+.btn--1:hover {
+  opacity: 0.9;
+  transition: 0.5s ease-in-out;
+}
+
+/* Popup */
+.modaly {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 3rem 4rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 4000;
+  transition: all 0.5s;
+  border-radius: 10px;
+  width: 500px;
+  height: 250px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 3000;
+  transition: all 0.5s;
+}
+
+.modal__header {
+  font-size: 2rem;
+  margin-bottom: 4.5rem;
+  line-height: 1.5;
+  color: black;
+}
+
+.modal__form {
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.modal__form button {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-top: 1rem;
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: black;
+  position: absolute;
+  top: 10rem;
+  right: 3rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(90deg, #0162c8, #55e7fc);
+  letter-spacing: 2px;
+  letter-spacing: 2px;
+  padding: 6px 18px;
+  border-radius: 40px;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.deleted {
+  font-family: inherit;
+  color: black;
+  position: absolute;
+  top: 10rem;
+  right: 18rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(90deg, #ff1212, #e04f4f);
+  letter-spacing: 2px;
+  padding: 6px 18px;
+  border-radius: 40px;
+}
+
+.deleted:hover {
+  -webkit-box-shadow: #fff 0 -1px 4px, rgb(255, 0, 0) 0 -2px 10px,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: #fff 0 -1px 4px, rgb(255, 0, 0) 0 -2px 10px,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.btn--close-modal:hover {
+  -webkit-box-shadow: #fff 0 -1px 4px, rgb(0, 132, 255) 0 -2px 10px,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: #fff 0 -1px 4px, rgb(0, 136, 255) 0 -2px 10px,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+
+.copyright {
+  margin-top: auto;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #aaa;
+  position: absolute;
+  top: 95%;
+}
+
+.copyright a{
+  text-decoration: none;
+}

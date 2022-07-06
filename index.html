@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+   
+
+    <div class="alert alert-danger hidden" role="alert">
+      Please enter something!
+    </div>
+    <div class="flex">
+      <span class="title">To Do List</span>
+      <img src="todo.png" class="img--1" />
+    </div>
+
+    <form action="">
+      <div>
+        <input
+          type="text"
+          class="todoText"
+          placeholder="Please enter something ..."
+        />
+        <button class="btn--1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-plus-square-fill btn--2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"
+            />
+          </svg>
+        </button>
+        <div class="bigContainer">
+          <!-- <div class="information" data-id="1464664646">
+            <p class="text">HTML</p>
+            <p class="date">Date</p>
+
+            <svg
+              class="delete--1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-trash3-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"
+              />
+            </svg>
+          </div> -->
+
+         
+        </div>
+       
+    </form>
+
+    <div class="modaly hidden ">
+      <button class="btn btn--close-modal">Cancel</button>
+      <button class="deleted">Delete</button>
+      <h2 class="modal__header">
+        Are u sure u want delete <br />
+        <span class="highlight">this Todo?</span>
+      </h2>
+    </div>
+    <div class="overlay hidden"></div>
+    <!-- /*copyRights */ -->
+    <p class="copyright">
+      &copy; Copyright by
+      <a
+        target="_blank"
+        href="https://github.com/devyassin"
+        >yassine lamoadden</a
+      >
+    </p>
+  </body>
+</html>
